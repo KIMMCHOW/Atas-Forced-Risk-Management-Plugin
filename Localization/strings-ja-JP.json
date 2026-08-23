@@ -1,0 +1,11 @@
+{
+  "MaxLossAmount": "最大損失額",
+  "MaxConsecutiveLosses": "最大連続損失回数",
+  "EnableWindowsShutdown": "Windowsシャットダウンを有効化",
+  "Risk": "リスク",
+  "MaxLossAmountDesc": "ストラテジー開始以降の最大損失。ClosedPnL + OpenPnLの差分を使用するため、含み損も含みます。",
+  "MaxConsecutiveLossesDesc": "ブロッカーが作動するまでの最大連続損失ClosedPnL更新回数。",
+  "EnableWindowsShutdownDesc": "デフォルトでオン。有効時、リスク上限到達でWindowsを強制シャットダウンし、クールダウン休憩を取ります。",
+  "BlockerTitle": "リスク上限に到達",
+  "BlockerSubtitle": "取引は一時停止中です。続行する前にリスクプランを見直してください。"
+}

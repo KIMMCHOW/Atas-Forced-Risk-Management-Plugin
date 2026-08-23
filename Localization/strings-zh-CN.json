@@ -1,0 +1,11 @@
+{
+  "MaxLossAmount": "最大亏损金额",
+  "MaxConsecutiveLosses": "最大连续亏损次数",
+  "EnableWindowsShutdown": "启用 Windows 关机",
+  "Risk": "风险",
+  "MaxLossAmountDesc": "策略启动以来的最大亏损。使用已平仓盈亏 + 未平仓盈亏差值，包含浮动亏损。",
+  "MaxConsecutiveLossesDesc": "触发拦截前允许的最大连续亏损已平仓盈亏更新次数。",
+  "EnableWindowsShutdownDesc": "默认开启。启用后，触发风险上限将强制 Windows 关机，强制冷却休息。",
+  "BlockerTitle": "已达风险上限",
+  "BlockerSubtitle": "交易已暂停。继续前请先复盘你的风险计划。"
+}

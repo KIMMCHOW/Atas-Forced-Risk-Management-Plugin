@@ -1,0 +1,11 @@
+{
+  "MaxLossAmount": "अधिकतम हानि राशि",
+  "MaxConsecutiveLosses": "अधिकतम लगातार हानियाँ",
+  "EnableWindowsShutdown": "Windows शटडाउन सक्षम करें",
+  "Risk": "जोखिम",
+  "MaxLossAmountDesc": "रणनीति प्रारंभ से अधिकतम हानि। ClosedPnL + OpenPnL अंतर का उपयोग करता है, इसलिए फ्लोटिंग हानि शामिल है।",
+  "MaxConsecutiveLossesDesc": "ब्लॉकर सक्रिय होने से पहले अधिकतम लगातार हानिकारक ClosedPnL अपडेट।",
+  "EnableWindowsShutdownDesc": "डिफ़ॉल्ट चालू। सक्षम होने पर, जोखिम सीमा तक पहुँचने पर Windows शटडाउन को बलपूर्वक करता है।",
+  "BlockerTitle": "जोखिम सीमा पूर्ण",
+  "BlockerSubtitle": "ट्रेडिंग रोक दी गई है। जारी रखने से पहले अपनी जोखिम योजना की समीक्षा करें।"
+}

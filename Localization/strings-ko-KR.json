@@ -1,0 +1,11 @@
+{
+  "MaxLossAmount": "최대 손실 금액",
+  "MaxConsecutiveLosses": "최대 연속 손실 횟수",
+  "EnableWindowsShutdown": "Windows 종료 사용",
+  "Risk": "리스크",
+  "MaxLossAmountDesc": "전략 시작 이후 최대 손실. ClosedPnL + OpenPnL 차이를 사용하므로 미실현 손실이 포함됩니다.",
+  "MaxConsecutiveLossesDesc": "블로커가 발동하기 전 최대 연속 손실 ClosedPnL 업데이트 횟수.",
+  "EnableWindowsShutdownDesc": "기본 켜짐. 리스크 한도 도달 시 Windows 종료를 강제하여 냉각 휴식을 취합니다.",
+  "BlockerTitle": "리스크 한도 도달",
+  "BlockerSubtitle": "거래가 일시 중지되었습니다. 계속하기 전에 리스크 계획을 검토하세요."
+}

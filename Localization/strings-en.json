@@ -1,0 +1,11 @@
+{
+  "MaxLossAmount": "Max Loss Amount",
+  "MaxConsecutiveLosses": "Max Consecutive Losses",
+  "EnableWindowsShutdown": "Enable Windows Shutdown",
+  "Risk": "Risk",
+  "MaxLossAmountDesc": "Maximum loss since strategy start. Uses the ClosedPnL + OpenPnL delta, so floating loss is included.",
+  "MaxConsecutiveLossesDesc": "Maximum consecutive losing ClosedPnL updates before the blocker triggers.",
+  "EnableWindowsShutdownDesc": "Default on. When enabled, hitting a risk limit forces Windows shutdown for a cooldown break.",
+  "BlockerTitle": "Risk limit reached",
+  "BlockerSubtitle": "Trading is paused. Review your risk plan before continuing."
+}

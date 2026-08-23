@@ -1,0 +1,11 @@
+{
+  "MaxLossAmount": "Importe máximo de pérdida",
+  "MaxConsecutiveLosses": "Pérdidas consecutivas máximas",
+  "EnableWindowsShutdown": "Habilitar apagado de Windows",
+  "Risk": "Riesgo",
+  "MaxLossAmountDesc": "Pérdida máxima desde el inicio de la estrategia. Usa la diferencia ClosedPnL + OpenPnL, por lo que incluye pérdidas flotantes.",
+  "MaxConsecutiveLossesDesc": "Máximas actualizaciones consecutivas de ClosedPnL perdedoras antes de que se active el bloqueo.",
+  "EnableWindowsShutdownDesc": "Activado por defecto. Al alcanzar el límite de riesgo, fuerza el apagado de Windows para una pausa de enfriamiento.",
+  "BlockerTitle": "Límite de riesgo alcanzado",
+  "BlockerSubtitle": "El trading está en pausa. Revise su plan de riesgo antes de continuar."
+}
