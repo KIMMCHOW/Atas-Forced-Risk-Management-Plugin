@@ -53,7 +53,7 @@ dotnet build .\AtasForcedRiskManagementPlugin.csproj -c Release
 Expected artifact / 预期产物：
 
 ```text
-Products\AtasForcedRiskManagementPlugin\build\AtasForcedRiskManagementPlugin.dll
+build\AtasForcedRiskManagementPlugin.dll
 ```
 
 ## Install / 安装

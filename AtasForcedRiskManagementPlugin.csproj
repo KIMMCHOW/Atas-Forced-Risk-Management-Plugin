@@ -6,10 +6,10 @@
     <PlatformTarget>x64</PlatformTarget>
     <AssemblyName>AtasForcedRiskManagementPlugin</AssemblyName>
     <RootNamespace>AtasForcedRiskManagementPlugin</RootNamespace>
-    <Version>1.0.0</Version>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
-    <InformationalVersion>1.0.0</InformationalVersion>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <InformationalVersion>1.0.1</InformationalVersion>
     <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
@@ -50,5 +50,9 @@
       <HintPath>$(ATAS_BASE)\System.Drawing.Common.dll</HintPath>
       <Private>false</Private>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\*.json" />
   </ItemGroup>
 </Project>

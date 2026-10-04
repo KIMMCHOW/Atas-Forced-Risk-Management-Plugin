@@ -42,10 +42,10 @@ public class AtasForcedRiskManagementPlugin : ChartStrategy
     };
 
     private const string ProductSlug = "atas-forced-risk-management-plugin";
-    private const string CurrentProductVersion = "1.0.0";
+    private const string CurrentProductVersion = "1.0.1";
     private const string ProductVersionApiUrl = "https://tradinghubs.org/api/products/latest-version";
-    private const string BlockerText = "Risk limit reached";
-    private const string BlockerSubtitle = "Trading is paused. Review your risk plan before continuing.";
+    private static string BlockerText => Strings.Get("BlockerTitle");
+    private static string BlockerSubtitle => Strings.Get("BlockerSubtitle");
     private const uint TokenAdjustPrivileges = 0x00000020;
     private const uint TokenQuery = 0x00000008;
     private const uint SePrivilegeEnabled = 0x00000002;
@@ -53,9 +53,9 @@ public class AtasForcedRiskManagementPlugin : ChartStrategy
     private const string SeShutdownName = "SeShutdownPrivilege";
     private static readonly TimeSpan ShutdownDelay = TimeSpan.FromSeconds(5);
 
-    private readonly RenderFont _titleFont = new RenderFont("Arial", 42f, System.Drawing.FontStyle.Bold);
-    private readonly RenderFont _subtitleFont = new RenderFont("Arial", 18f, System.Drawing.FontStyle.Regular);
-    private readonly RenderFont _updateFont = new RenderFont("Arial", 10f, System.Drawing.FontStyle.Regular);
+    private readonly RenderFont _titleFont = new RenderFont("SimSun", 42f, System.Drawing.FontStyle.Bold);
+    private readonly RenderFont _subtitleFont = new RenderFont("SimSun", 18f, System.Drawing.FontStyle.Regular);
+    private readonly RenderFont _updateFont = new RenderFont("SimSun", 10f, System.Drawing.FontStyle.Regular);
     private readonly RenderStringFormat _centerFormat = new RenderStringFormat
     {
         Alignment = StringAlignment.Center,
@@ -90,7 +90,7 @@ public class AtasForcedRiskManagementPlugin : ChartStrategy
     private string _latestProductVersion = string.Empty;
     private Portfolio? _currentPortfolio;
 
-    [Display(Name = "Max Loss Amount", GroupName = "Risk", Description = "Maximum loss since strategy start. Uses the ClosedPnL + OpenPnL delta, so floating loss is included.", Order = 10)]
+    [Display(ResourceType = typeof(Strings), Name = nameof(Strings.MaxLossAmount), GroupName = nameof(Strings.Risk), Description = nameof(Strings.MaxLossAmountDesc), Order = 10)]
     [Range(typeof(decimal), "0", "999999999")]
     public decimal MaxLossAmount
     {
@@ -102,7 +102,7 @@ public class AtasForcedRiskManagementPlugin : ChartStrategy
         }
     }
 
-    [Display(Name = "Max Consecutive Losses", GroupName = "Risk", Description = "Maximum consecutive losing ClosedPnL updates before the blocker triggers.", Order = 20)]
+    [Display(ResourceType = typeof(Strings), Name = nameof(Strings.MaxConsecutiveLosses), GroupName = nameof(Strings.Risk), Description = nameof(Strings.MaxConsecutiveLossesDesc), Order = 20)]
     [Range(0, 1000)]
     public int MaxConsecutiveLosses
     {
@@ -114,7 +114,7 @@ public class AtasForcedRiskManagementPlugin : ChartStrategy
         }
     }
 
-    [Display(Name = "Enable Windows Shutdown", GroupName = "Risk", Description = "Default on. When enabled, hitting a risk limit forces Windows shutdown for a cooldown break.", Order = 30)]
+    [Display(ResourceType = typeof(Strings), Name = nameof(Strings.EnableWindowsShutdown), GroupName = nameof(Strings.Risk), Description = nameof(Strings.EnableWindowsShutdownDesc), Order = 30)]
     public bool EnableWindowsShutdown
     {
         get => _autoShutdownEnabled;
