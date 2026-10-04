@@ -17,6 +17,9 @@
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <DebugType>none</DebugType>
     <DebugSymbols>false</DebugSymbols>
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    <PathMap>$(MSBuildProjectDirectory)=.</PathMap>
     <GenerateDependencyFile>false</GenerateDependencyFile>
     <NoWarn>1705;CA1416</NoWarn>
     <OutputPath>build\</OutputPath>
